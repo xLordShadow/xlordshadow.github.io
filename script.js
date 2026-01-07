@@ -1,4 +1,4 @@
-// Smooth scroll for navigation links
+//Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -13,7 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+//Navbar background on scroll
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
@@ -24,7 +24,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-// Set current year in footer
 const currentYear = new Date().getFullYear();
 const footerYears = document.querySelectorAll('.footer p');
 footerYears.forEach(footerYear => {
@@ -32,4 +31,3 @@ footerYears.forEach(footerYear => {
         footerYear.textContent = footerYear.textContent.replace('2025', currentYear);
     }
 });
-
